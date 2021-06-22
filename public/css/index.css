@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+@font-face {
+    font-family: 'Prumo deck w00';
+    src: url(../fonts/cutom2.ttf) format("truetype");
+    font-weight: bold;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    overflow-x: hidden;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+.bgimg-1, .bgimg-2, .bgimg-2n, .bgimg-2nn, .bgimg-3, .bgimg-4 {
+    position: relative;
+    opacity: 0.95;
+  /*   background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("../img/2.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("../img/1.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2n {
+    background-image: url("../img/n1.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2nn {
+    background-image: url("../img/nn.jpg");
+    min-height: 100%;
+}
+
+.bgimg-3 {
+    background-image: url("../img/3.jpg");
+    min-height: 100%;
+}
+
+.bgimg-4 {
+    background-image: url("../img/4.jpg");
+    min-height: 100%;
+}
+
+.bgimg-1:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.55);
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: left;
+    color: #000;
+    margin-left: 50px;
+}
+
+.caption span.border {
+    background: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 5px;
+    font-size: 70px;
+    font-family: 'Prumo deck w00', serif;
+    letter-spacing: 5px;
+}
+
+.caption span.border1 {
+    background: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1px;
+    font-size: 70px;
+    font-family: 'Prumo deck w00', serif;
+    letter-spacing: 5px;
+}
+
+h3 {
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font: 54px 'Prumo deck w00', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #512d1e;
+}
+
+.tittle4 {
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font: 24px 'Prumo deck w00', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #512d1e;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
+
+.container-principal {
+    color: #512d1ea4;
+    font-size: 29px;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgb(255, 254, 252);
+    text-align: center;
+    padding: 100px 80px 150px;
+}
+
+.container-parrafo {
+    padding: 0px 15vw 0px 15vw;
+}
+
+.input-principal {
+    text-align: left;
+}
+
+.input-principal input {
+    width: 300px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px 10px 10px;
+    border: 2px solid #512d1e;
+    font-family: serif;
+    font-size: 15px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    outline: none;
+    border-radius: 10px 10px 10px;
+    border: 2px solid #512d1e;
+    font-family: serif;
+    font-size: 15px;
+}
+
+.button-principal button {
+    width: 300px;
+    height: 45px;
+    outline: none;
+    color: #512d1e;
+    border-radius: 10px 10px 10px;
+    border: 2px solid #512d1e;
+    font-family: 'Prumo deck w00';
+    background: #512d1e96;
+    font-size: 20px;
+}
+
+button:active {
+    padding-top: 5px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    height: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Prumo deck w00';
+}
+th {
+    border: 1px solid #512d1e10;
+    min-width: 120px;
+}
+
+caption {
+    height: 65px;
+    border-top: 1px solid #512d1e10;
+    border-left: 1px solid #512d1e10;
+    border-right: 1px solid #512d1e10;
+    background-color: #512d1eb6;
+    color: #fff;
+    font-size: 20px;
+}
+
+thead {
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    overflow: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-principal {
+    width: 100vw;
+    height: 70px;
+    background: #ffffff;
+    position: relative;
+    z-index: 8;
+    top: 0;
+}
+
+.bolita-header {
+    width: 150px;
+    height: 125px;
+    background: #ffffff;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.card-principal img {
+    width: 70vw;
+    height: 140vh;
+    object-fit: cover;
+}
+
+.grid-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.product-card {
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0 5px 12px 0 rgb(0 0 0 / 13%);
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50px 50px 0px 0px;
+
+}
+
+.resolver-pc {
+    width: 100%;
+    height: 100px;
+}
+
+.resolver-pc button {
+    background: none;
+    border: none;
+    font-size: 27px;
+    font-weight: 600;
+    font-family: 'Crimson Pro';
+    color: #512d1e;
+    text-decoration: underline;
+    outline: none;
+}
+
+.certificaciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+.certi-div {
+    width: 80%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 5px 12px 0 rgb(0 0 0 / 13%);
+    margin: auto;
+    margin-bottom: 5px;
+}
+.certi-div img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.rueda {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+.rueda-div {
+    width: 80%;
+    margin: auto;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 5px 12px 0 rgb(0 0 0 / 13%);
+    margin-bottom: 5px;
+}
+.rueda-div img {
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+}
+
+.plant {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+.plant-div {
+    width: 80%;
+    margin: auto;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 5px 12px 0 rgb(0 0 0 / 13%);
+    margin-bottom: 5px;
+}
+.plant-div img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.plant1 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    width: 100%;
+}
+.plant1-div {
+    width: 80%;
+    margin: auto;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 5px 12px 0 rgb(0 0 0 / 13%);
+    margin-bottom: 5px;
+}
+.plant1-div img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 20px 20px 20px 20px;
+}
+#fondo {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.651);
+}
+.card {
+    width: 55vw;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Crimson Pro';
+    color: #613e2f;
+    font-size: 25px;
+    overflow-y: scroll;
+    position: relative;
+}
+.cerrar button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 10px 10px;
+    border: #000 2px solid;
+    background: none;
+
+}
+.card-content {
+    width: 60%;
+    margin: auto;
+}
+
+#tableresolver {
+    overflow-x: scroll;
+}
+
+/* .header-abs1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: 'Prumo deck w00', serif;
+    font-size: 18px;
+}
+.header-abs2 {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-family: 'Prumo deck w00', serif;
+    font-size: 18px;
+} */
+.social button {
+ background:#fff;
+ outline: none;
+ cursor: pointer;
+ border: none;
+ border-radius: 5px 5px 5px 5px;
+}
+@media screen and (max-width: 900px) {
+
+    .caption span.border {
+        background: none;
+        border-radius: 20px;
+        color: #fff;
+        padding: 5px;
+        font-size: 50px;
+        font-family: 'Prumo deck w00', serif;
+        letter-spacing: 5px;
+    }
+    
+    .caption span.border1 {
+        background: none;
+        border-radius: 10px;
+        color: #fff;
+        padding: 1px;
+        font-size: 50px;
+        font-family: 'Prumo deck w00', serif;
+        letter-spacing: 5px;
+    }
+
+    h3 {
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        font: 35px 'Prumo deck w00', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: #512d1e;
+    }
+
+    
+    .container-parrafo {
+        padding: 0px 0vw 0px 0vw;
+    }
+
+    .container-principal {
+        color: #512d1ea4;
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif;
+        font-weight: 500;
+        font-style: normal;
+        background-color: rgb(255, 254, 252);
+        text-align: center;
+        padding: 100px 70px 150px;
+    }
+    .grid-product {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .product-card {
+        border-radius: 50px 50px 50px 50px;
+        box-shadow: 0 5px 12px 0 rgb(0 0 0 / 13%);
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .certificaciones {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .rueda {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .plant {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .plant-div img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    .plant1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .plant1-div img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    .card {
+        width: 90vw;
+        height: 90vh;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: 'Crimson Pro';
+        color: #613e2f;
+        font-size: 25px;
+        overflow-y: scroll;
+        position: relative;
+    }
+
+    .card-content {
+        width: 80%;
+        margin: auto;
+    }
+
+
+    .plant-div {
+        width: 60%;
+        margin: auto;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 0 5px 12px 0 rgb(0 0 0 / 13%);
+        margin-bottom: 5px;
+    }
+
+    .plant1-div {
+        width: 60%;
+        margin: auto;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 0 5px 12px 0 rgb(0 0 0 / 13%);
+        margin-bottom: 5px;
+    }
+
+    .certi-div {
+        width: 60%;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 0 5px 12px 0 rgb(0 0 0 / 13%);
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    .rueda-div {
+        width: 60%;
+        margin: auto;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 0 5px 12px 0 rgb(0 0 0 / 13%);
+        margin-bottom: 5px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .caption span.border {
+        background: none;
+        border-radius: 20px;
+        color: #fff;
+        padding: 5px;
+        font-size: 40px;
+        font-family: 'Prumo deck w00', serif;
+        letter-spacing: 5px;
+    }
+    
+    .caption span.border1 {
+        background: none;
+        border-radius: 10px;
+        color: #fff;
+        padding: 1px;
+        font-size: 40px;
+        font-family: 'Prumo deck w00', serif;
+        letter-spacing: 5px;
+    }
+
+    h3 {
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        font: 25px 'Prumo deck w00', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: #512d1e;
+    }
+
+    .container-principal {
+        color: #512d1ea4;
+        font-size: 22.5px;
+        font-family: 'Crimson Pro', serif;
+        font-weight: 500;
+        font-style: normal;
+        background-color: rgb(255, 254, 252);
+        text-align: center;
+        padding: 100px 50px 150px;
+    }
+
+    .container-parrafo {
+        padding: 0px 0vw 0px 0vw;
+    }
+
+    .grid-product {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .product-card {
+        border-radius: 50px 50px 50px 50px;
+        box-shadow: 0 5px 12px 0 rgb(0 0 0 / 13%);
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .certificaciones {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .rueda {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .plant {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .plant-div img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    .plant1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .plant1-div img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    .card {
+        width: 90vw;
+        height: 90vh;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: 'Crimson Pro';
+        color: #613e2f;
+        font-size: 25px;
+        overflow-y: scroll;
+        position: relative;
+    }
+
+    .card-content {
+        width: 80%;
+        margin: auto;
+    }
+
+    
+}
